@@ -1,0 +1,47 @@
+{
+  "Metadata": {
+    "A2": "Projektname", "B2": "CFG-Beispiel",
+    "A3": "Autor", "B3": "Beispiel",
+    "A4": "Version", "B4": "1.0"
+  },
+  "Materialien": {
+    "A2": "MAT_STEEL_001", "B2": "Stahl",
+    "A3": "Dichte", "B3": 7.85,
+    "A4": "Dicke", "B4": 1.0,
+    "A5": "Notiz", "B5": "ka",
+    "A6": "MAT_STEEL_002", "B6": "Stahl",
+    "A7": "Dichte", "B7": 7.85,
+    "A8": "Dicke", "B8": 2.0,
+    "A9": "Notiz", "B9": "Zweiter Block desselben Materials"
+  },
+  "Maschinenkonfiguration": {
+    "A2": "MCH001", "B2": "X", "C2": "Y", "D2": "Z",
+    "A3": "R1", "B3": 1.0, "C3": 2.0, "D3": 3.0,
+    "A4": "R2", "B4": 4.0, "C4": 5.0, "D4": 6.0,
+    "A5": "R3", "B5": 7.0, "C5": 8.0, "D5": 9.0
+  },
+  "Einstellungen": {
+    "A2": "CFG001", "B2": "Standard",
+    "A3": "Drehzahl", "B3": 1500.0,
+    "A4": "Dauer", "B4": 10.0,
+    "A5": "Grenzen", "B5": 0.0, "C5": 1.0,
+    "A6": "CFG002", "B6": "Schonend",
+    "A7": "Drehzahl", "B7": 900.0,
+    "A8": "Dauer", "B8": 20.0,
+    "A9": "Grenzen", "B9": 0.1, "C9": 0.5
+  },
+  "Ablauferstellung": {
+    "A2": "STEP001", "B2": "Bearbeiten",
+    "A3": "Materialreferenz", "B3": "MAT_STEEL_001",
+    "A4": "Einstellungsreferenz", "B4": "CFG001",
+    "A5": "Maschinenreferenz", "B5": "MCH001",
+    "A6": "Grenzen", "B6": 1.0, "C6": 2.0, "D6": 2.0, "E6": 3.0,
+    "A7": "Vorschub", "B7": 0.0,
+    "A8": "STEP002", "B8": "Finish",
+    "A9": "Materialreferenzen", "B9": "MAT_STEEL_001; MAT_STEEL_002",
+    "A10": "Einstellungsreferenz", "B10": "CFG002",
+    "A11": "Maschinenreferenz", "B11": "MCH001",
+    "A12": "Grenzen", "B12": null, "C12": null, "D12": null, "E12": null,
+    "A13": "Vorschub", "B13": "ka"
+  }
+}

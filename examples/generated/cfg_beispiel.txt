@@ -1,0 +1,50 @@
+Excel-Übersetzer
+project_name = CFG-Beispiel
+author = Beispiel
+version = 1.0
+
+
+Step 1: STEP001 – Bearbeiten
+Direkte Parameter:
+  feed = 0.00
+Materialien:
+  MAT_STEEL_001 (Stahl)
+    density = 7.85
+    thickness = 1.00
+    note = ka
+Einstellungen:
+  CFG001 (Standard)
+    speed_rpm = [1500.00]
+    duration_s = [10.00]
+    limits = [0.00, 1.00]
+Maschinenmatrizen:
+  MCH001
+    2.00  3.00
+    5.00  6.00
+
+
+Step 2: STEP002 – Finish
+Direkte Parameter:
+  feed = ka
+Materialien:
+  MAT_STEEL_001 (Stahl)
+    density = 7.85
+    thickness = 1.00
+    note = ka
+  MAT_STEEL_002 (Stahl)
+    density = 7.85
+    thickness = 2.00
+    note = Zweiter Block desselben Materials
+Einstellungen:
+  CFG002 (Schonend)
+    speed_rpm = [900.00]
+    duration_s = [20.00]
+    limits = [0.10, 0.50]
+Maschinenmatrizen:
+  MCH001
+    1.00  2.00  3.00
+    4.00  5.00  6.00
+    7.00  8.00  9.00
+
+
+Ende. Anzahl Steps: 2
